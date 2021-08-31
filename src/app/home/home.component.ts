@@ -110,13 +110,13 @@ export class HomeComponent implements OnInit {
       this.transactions.push({
         tx: data,
       });
-      console.log(`>>>>>>>>Transaction ${index+1} stats`);
-      console.log(`Byte size of To is ${this.byteCount(data.to)}`);
-      console.log(`Byte size of From is ${this.byteCount(data.from)}`);
-      console.log(`Byte size of Nonce is ${this.byteCount(data.nonce)}`);
-      console.log(`Byte size of ECDSA is ${this.byteCount('ECDSA')}`);
+      //console.log(`>>>>>>>>Transaction ${index+1} stats`);
+      //console.log(`Byte size of To is ${this.byteCount(data.to)}`);
+      //console.log(`Byte size of From is ${this.byteCount(data.from)}`);
+      //console.log(`Byte size of Nonce is ${this.byteCount(data.nonce)}`);
+      //console.log(`Byte size of ECDSA is ${this.byteCount('ECDSA')}`);
     });
-    console.log(`Byte size of Signature is ${this.byteCount(response.signature)}`);
+    //console.log(`Byte size of Signature is ${this.byteCount(response.signature)}`);
     console.log(this.transactions);
     let startTime2 = performance.now();
     //Submit batch
